@@ -14,6 +14,12 @@ class App extends Component {
             text1: ''
         }
     }
+
+    handleChangeText0 = event => this.setState({ text0: event.target.value })
+
+    handleChangeText1 = event => this.setState({ text1: event.target.value })
+
+    handleClick = () => this.setState({ memeLimit: this.state.memeLimit + 10 })
     
     render() {
         return (
@@ -27,7 +33,7 @@ class App extends Component {
                         {' '}
                         <FormControl
                             type="text"
-                            onChange={event => this.setState({ text0: event.target.value })} />
+                            onChange={this.handleChangeText0} />
                     </FormGroup>
                     {' '}
                     <FormGroup>
@@ -35,7 +41,7 @@ class App extends Component {
                         {' '}
                         <FormControl
                             type="text"
-                            onChange={event => this.setState({ text1: event.target.value })} />
+                            onChange={this.handleChangeText1} />
                     </FormGroup>
                 </Form>
                 {
@@ -51,9 +57,7 @@ class App extends Component {
                 }
                 <div
                     className="meme-button"
-                    onClick={() => {
-                        this.setState({ memeLimit: this.state.memeLimit + 10 })
-                    }}> 
+                    onClick={this.handleClick}> 
                     Load 10 more memes...
                 </div>
             </div>

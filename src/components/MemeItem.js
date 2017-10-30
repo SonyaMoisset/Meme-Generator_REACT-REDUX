@@ -11,6 +11,12 @@ class MemeItem extends Component {
         }
     }
 
+    handleOnMouseEnter = () => this.setState({ hovered: true })
+
+    handleOnMouseLease = () => this.setState({ hovered: false })
+
+    handleClick = () => this.postMeme()
+
     postMeme() {
         const { text0, text1 } = this.props
         const memeObj = {
@@ -25,9 +31,9 @@ class MemeItem extends Component {
         return (
             <div
                 className="meme-item"
-                onMouseEnter={() => this.setState({ hovered: true })}
-                onMouseLeave={() => this.setState({ hovered: false })}
-                onClick={() => this.postMeme()}>
+                onMouseEnter={this.handleOnMouseEnter}
+                onMouseLeave={this.handleOnMouseLease}
+                onClick={this.handleClick}>
                 <img
                     src={this.props.meme.url}
                     alt={this.props.meme.name}
