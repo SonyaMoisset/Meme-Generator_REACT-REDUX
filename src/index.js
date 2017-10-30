@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 import rootReducer from './reducers'
 import thunk from 'redux-thunk'
 
-import { fetchMemes } from './actions/memes_actions'
+import { fetchMemes } from './actions/receiveMemes_actions'
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
 store.subscribe(() => console.log('store', store.getState()))

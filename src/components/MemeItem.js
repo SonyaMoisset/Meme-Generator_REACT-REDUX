@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { createMeme } from '../actions/memes_actions'
+import { createMeme } from '../actions/newMeme_actions'
 
 class MemeItem extends Component {
     constructor() {
