@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { createMeme } from '../actions'
+import { createMeme } from '../actions/memes_actions'
 
 class MemeItem extends Component {
     constructor() {
@@ -35,7 +35,7 @@ class MemeItem extends Component {
                 <p
                     className={ this.state.hovered ? "meme-text" : "no-text" }>{this.props.meme.name}</p>
             </div>
-        );
+        )
     }
 }
 
