@@ -1,0 +1,10 @@
+.meme-item {
+    text-align: left;
+    display: inline-block;
+    pad: 10px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    cursor: pointer;
+}

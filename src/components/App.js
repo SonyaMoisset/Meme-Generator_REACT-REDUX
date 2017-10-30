@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import '../styles/index.css'
 
 import { Form, FormGroup, FormControl, ControlLabel } from 'react-bootstrap'
 import MemeItem from './MemeItem'
