@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { Form, FormGroup, FormControl, ControlLabel } from 'react-bootstrap'
-import MemeItem from './MemeItem'
-import MyMemes from './MyMemes'
+import { MemeItem, MyMemes } from '../components'
 
 class App extends Component {
     constructor() {
@@ -28,7 +27,7 @@ class App extends Component {
                         {' '}
                         <FormControl
                             type="text"
-                            onChange={event => this.setState({ text0: event.target.value })}></FormControl>
+                            onChange={event => this.setState({ text0: event.target.value })} />
                     </FormGroup>
                     {' '}
                     <FormGroup>
@@ -36,7 +35,7 @@ class App extends Component {
                         {' '}
                         <FormControl
                             type="text"
-                            onChange={event => this.setState({ text1: event.target.value })}></FormControl>
+                            onChange={event => this.setState({ text1: event.target.value })} />
                     </FormGroup>
                 </Form>
                 {

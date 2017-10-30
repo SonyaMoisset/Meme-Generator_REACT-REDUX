@@ -17,7 +17,7 @@ class MyMemes extends Component {
                     })
                 }                
             </div>
-        );
+        )
     }
 }
 
