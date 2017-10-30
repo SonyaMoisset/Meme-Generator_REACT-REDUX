@@ -7,11 +7,11 @@ import { Provider } from 'react-redux'
 import rootReducer from './reducers'
 import thunk from 'redux-thunk'
 
-import { fetchhMemes } from './actions'
+import { fetchMemes } from './actions'
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
 store.subscribe(() => console.log('store', store.getState()))
-store.dispatch(fetchhMemes)
+store.dispatch(fetchMemes())
 
 ReactDOM.render(
     <Provider store={store}>
