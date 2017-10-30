@@ -6,7 +6,7 @@ class MyMemes extends Component {
         return (
             <div>
                 {
-                    this.props.myMemes.map((meme, index) => {
+                    this.props.newMeme.map((meme, index) => {
                         return (
                             <img
                                 key={index}
@@ -23,7 +23,7 @@ class MyMemes extends Component {
 
 function mapStateToProps(state) {
     return {
-        myMemes: state.myMemes
+        newMeme: state.newMeme
     }
 }
 
