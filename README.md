@@ -11,6 +11,12 @@ To see the project:
 - ES6 syntax
 - Templating string
 - Destructuring assignment
+- fetch API
 - Component-based architecture
 - CSS Partials/Imports
    
+### A user can choose between a large choice of meme
+![Home](https://github.com/SonyaMoisset/Meme-Generator_REACT-REDUX/blob/master/home.png) 
+
+### A user can create a meme
+![Meme](https://github.com/SonyaMoisset/Meme-Generator_REACT-REDUX/blob/master/meme.png)
