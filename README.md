@@ -1,5 +1,7 @@
 # Meme Generator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SonyaMoisset/Meme-Generator_REACT-REDUX.svg)](https://greenkeeper.io/)
+
 ## A React web application where the user can create their own memes
 
 To see the project:
