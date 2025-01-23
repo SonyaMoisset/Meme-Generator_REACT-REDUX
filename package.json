@@ -5,13 +5,16 @@
   "dependencies": {
     "react": "16.8.1",
     "react-dom": "16.8.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "react-bootstrap": "0.32.4",
@@ -19,5 +22,6 @@
     "redux": "4.0.4",
     "redux-thunk": "3.1.0",
     "webpack-dev-server": "3.1.14"
-  }
+  },
+  "snyk": true
 }
